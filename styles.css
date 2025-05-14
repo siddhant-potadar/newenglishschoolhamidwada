@@ -1,0 +1,743 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #004080;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section .logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.college-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.right-section {
+  text-align: right;
+  font-size: 14px;
+}
+
+.right-section div {
+  margin: 2px 0;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #003366;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-menu li a:hover {
+  background-color: #0055a5;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  background-color: #004080;
+  list-style: none;
+  min-width: 180px;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* College description styles */
+.college-image {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.college-description {
+  width: 60%;
+}
+
+.college-description h2 {
+  margin-bottom: 20px;
+}
+
+/* Achievements styles */
+.achievements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.achievement-message {
+  width: 40%;
+}
+
+.achievement-message h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.achievements-slideshow {
+  width: 55%;
+}
+
+/* Press news styles */
+.press-news {
+  padding: 20px;
+  text-align: center;
+}
+
+.press-news h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.press-news-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.press-news-images img {
+  width: 23%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-block {
+  width: 30%;
+}
+
+.footer-block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-block p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Page header styles */
+.page-header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.breadcrumb {
+  background-color: #f1f1f1;
+  padding: 10px 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 30px;
+  line-height: 1.6;
+}
+
+/* About styles */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Contact styles */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  width: 45%;
+}
+
+.contact-block {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-block h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.contact-right {
+  width: 50%;
+}
+
+/* Gallery styles */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Arts styles */
+.arts-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.arts-left {
+  flex: 1;
+  text-align: center;
+}
+
+.arts-left img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.hod-info {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.arts-right {
+  flex: 2;
+}
+
+.arts-right h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.arts-right h3 {
+  margin-top: 20px;
+  color: #444;
+}
+
+.arts-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+/* Courses styles */
+.courses-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.courses-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.courses-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.course-block {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.course-block h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.course-block h4 {
+  margin-top: 20px;
+  color: #34495e;
+}
+
+.course-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* Admission styles */
+.admission-section {
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+.admission-container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.admission-container h2 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.admission-container ul {
+  list-style: disc;
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.admission-container p {
+  margin-bottom: 15px;
+}
+
+/* Lightbox styles */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Mobile Navigation */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  .header {
+    padding: 10px 15px;
+  }
+  
+  .college-name {
+    font-size: 18px;
+  }
+  
+  .left-section .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Navigation adjustments */
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    display: none;
+  }
+  
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+  
+  /* Gallery adjustments */
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  
+  /* About container adjustments */
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Achievements adjustments */
+  .achievements {
+    flex-direction: column;
+  }
+  
+  .achievement-message, .achievements-slideshow {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact section adjustments */
+  .contact-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+  
+  /* Arts container adjustments */
+  .arts-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .arts-left, .arts-right {
+    flex: none;
+    width: 100%;
+  }
+  
+  /* Press news adjustments */
+  .press-news-images {
+    flex-wrap: wrap;
+  }
+  
+  .press-news-images img {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer adjustments */
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Header adjustments */
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .left-section {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .right-section {
+    text-align: center;
+  }
+  
+  /* Gallery adjustments */
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Page header adjustments */
+  .page-header {
+    font-size: 24px;
+  }
+  
+  /* Course block adjustments */
+  .course-block {
+    padding: 15px;
+  }
+  
+  /* Admission adjustments */
+  .admission-container {
+    padding: 15px;
+  }
+  
+  /* Press news adjustments */
+  .press-news-images img {
+    width: 100%;
+  }
+}
+/* Add these styles to your existing CSS file */
+
+/* Make sure dropdown menus are properly displayed in mobile view */
+@media screen and (max-width: 768px) {
+  /* Improve dropdown menu visibility */
+  .dropdown-menu {
+    background-color: #00508f; /* slightly lighter than parent menu */
+    display: none;
+    padding-left: 15px; /* indent dropdown items */
+  }
+  
+  /* When dropdown is active, show the dropdown menu */
+  .dropdown.active > .dropdown-menu {
+    display: block;
+  }
+  
+  /* Style for dropdown links in mobile view */
+  .dropdown-menu li a {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Add visual indicator for dropdowns */
+  .dropdown > a::after {
+    content: ' ▼';
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  /* Change indicator when dropdown is active */
+  .dropdown.active > a::after {
+    content: ' ▲';
+  }
+  
+  /* Ensure dropdown items don't have hover background conflict */
+  .dropdown-menu li a:hover {
+    background-color: #0066cc;
+  }
+}
+/* Add these styles to your existing CSS file */
+
+/* Styles for Our Desk section */
+.our-desk {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.our-desk h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.desk-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* This allows items to wrap on smaller screens */
+  margin-top: 30px;
+}
+
+.desk-item {
+  margin-bottom: 20px;
+  width: 250px; /* Default size for larger screens */
+}
+
+.desk-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.desk-item img:hover {
+  transform: scale(1.03);
+}
+
+.desk-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.desk-item strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .desk-container {
+    gap: 20px;
+  }
+  
+  .desk-item {
+    width: 200px; /* Slightly smaller on tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-desk {
+    padding: 30px 15px;
+  }
+  
+  .desk-item {
+    width: 160px; /* Even smaller on phones */
+  }
+  
+  .desk-item strong {
+    font-size: 16px;
+  }
+  
+  .desk-item p {
+    font-size: 14px;
+  }
+}
